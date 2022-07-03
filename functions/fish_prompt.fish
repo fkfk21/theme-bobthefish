@@ -403,7 +403,6 @@ function __bobthefish_finish_segments -S -d 'Close open prompt segments'
             set -l fg_newline $color_newline[1]
             set -e color_newline[1]
             set_color -b $bg_newline $fg_newline $argv
-            echo -n ' '
             echo -ens "$theme_newline_prompt"
             set_color normal
             set_color $bg_newline
