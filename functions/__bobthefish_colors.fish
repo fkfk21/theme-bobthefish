@@ -545,6 +545,7 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
       set -l base0D  EBCB8B
       set -l base0E  A3BE8C
       set -l base0F  B48EAD
+      set -l base10  c0c0c0
 
       set -l colorfg $base00
 
@@ -571,13 +572,14 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
       set -x color_k8s                      $base02 $colorfg --bold
       set -x color_aws_vault                $base0A $base0D --bold
       set -x color_aws_vault_expired        $base0A $base0B --bold
-      set -x color_username                 $base02 $base0D --bold
-      set -x color_hostname                 $base02 $base0D
+      set -x color_username                 $base10 $base0B --bold
+      set -x color_hostname                 $base10 $base0B
       set -x color_rvm                      $base09 $colorfg --bold
       set -x color_node                     $base09 $colorfg --bold
       set -x color_virtualfish              $base09 $colorfg --bold
       set -x color_virtualgo                $base09 $colorfg --bold
       set -x color_desk                     $base09 $colorfg --bold
+      set -x color_newline                  $base02 $colorfg --bold
 
     case '*' # default dark theme
       #               light  medium dark
