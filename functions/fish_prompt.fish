@@ -1136,6 +1136,8 @@ end
 # ==============================
 
 function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
+    echo ""
+
     # Save the last status for later (do this before anything else)
     set -l last_status $status
 
